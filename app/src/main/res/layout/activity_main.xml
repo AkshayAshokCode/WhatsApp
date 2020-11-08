@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+  <com.google.android.material.appbar.AppBarLayout
+      android:id="@+id/app_bar"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:background="@color/colorPrimary"
+      app:elevation="0dp"
+      android:elevation="0dp"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:title="WhatsApp"
+        app:titleTextColor="@android:color/white"/>
+
+  </com.google.android.material.appbar.AppBarLayout>
+
+  <com.google.android.material.tabs.TabLayout
+      android:id="@+id/tab_layout"
+      android:layout_width="match_parent"
+      android:layout_below="@+id/app_bar"
+      android:layout_height="50dp"
+      app:tabGravity="fill"
+      app:tabBackground="@color/colorPrimary"
+      app:tabIndicator="@color/colorPrimary"
+      app:tabIndicatorHeight="3dp"
+      app:tabSelectedTextColor="@android:color/white"
+      app:tabIndicatorColor="@android:color/white"
+      app:tabTextColor="@android:color/white">
+
+  </com.google.android.material.tabs.TabLayout>
+
+  <androidx.viewpager.widget.ViewPager
+      android:id="@+id/view_pager"
+      android:visibility="visible"
+      android:layout_below="@id/tab_layout"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/fab_action"
+      android:layout_margin="15dp"
+      android:src="@android:drawable/stat_notify_chat"
+      android:layout_width="wrap_content"
+      android:tint="@android:color/white"
+      android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+</layout>

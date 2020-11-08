@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.startup.splashScreenActivity">
+
+    <Space
+        android:id="@+id/space1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/space1"
+
+        android:layout_marginStart="150dp"
+        android:src="@drawable/ic_baseline_android_24" />
+
+    <TextView
+        android:id="@+id/by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/akshay"
+        android:layout_centerHorizontal="true"
+        android:text="By"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/akshay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/space"
+        android:layout_centerHorizontal="true"
+        android:text="A K S H A Y"
+        android:textStyle="bold"
+        android:textColor="#33691E"
+        android:textSize="30sp" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
